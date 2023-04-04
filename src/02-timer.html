@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Countdown timer</title>
+    <link rel="stylesheet" href="css/common.css" />
+  </head>
+  <body>
+    <p><a href="index.html">Go back</a></p>
+
+    <input type="text" id="datetime-picker" />
+    <button type="button" data-start>Start</button>
+
+    <div class="timer" style="display: flex">
+      <div
+        class="field"
+        style="
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin-right: 20px;
+        "
+      >
+        <span
+          class="value"
+          data-days
+          style="color: rgb(218, 85, 180); font-size: 50px"
+          >00</span
+        >
+        <span class="label" style="color: rgb(72, 137, 221); font-size: 24px"
+          >Days</span
+        >
+      </div>
+      <div
+        class="field"
+        style="
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin-right: 20px;
+        "
+      >
+        <span
+          class="value"
+          data-hours
+          style="color: rgb(218, 85, 180); font-size: 50px"
+          >00</span
+        >
+        <span class="label" style="color: rgb(72, 137, 221); font-size: 24px"
+          >Hours</span
+        >
+      </div>
+      <div
+        class="field"
+        style="
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin-right: 20px;
+        "
+      >
+        <span
+          class="value"
+          data-minutes
+          style="color: rgb(218, 85, 180); font-size: 50px"
+          >00</span
+        >
+        <span class="label" style="color: rgb(72, 137, 221); font-size: 24px"
+          >Minutes</span
+        >
+      </div>
+      <div
+        class="field"
+        style="display: flex; flex-direction: column; align-items: center"
+      >
+        <span
+          class="value"
+          data-seconds
+          style="color: rgb(218, 85, 180); font-size: 50px"
+          >00</span
+        >
+        <span class="label" style="color: rgb(72, 137, 221); font-size: 24px"
+          >Seconds</span
+        >
+      </div>
+    </div>
+
+    <script src="js/02-timer.js" type="module"></script>
+  </body>
+</html>
